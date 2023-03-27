@@ -1,0 +1,138 @@
+body {
+    background: url(../img/calanques.jpg);
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+nav {
+    text-align: center;
+    font-size: 3em;
+}
+
+.visible-desktop {
+    display: block;
+}
+
+.visible-mobile {
+    display: none;
+}
+
+header > img {
+    margin: auto
+}
+
+nav input,
+nav label {
+   display: none;   
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-flex;
+    margin: 0em 1em;
+    justify-content: center;
+    align-items: center;
+    background: #17FFC9;
+    border-radius: 15px;
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+}
+
+#page_actuel {
+    background: #0C5EED;
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+article {
+    background: rgba(9, 151, 189, 0.9);
+    border-radius: 15px;
+    padding: 0.1em 1em;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+table, article > ul {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+article > ul {
+    width: calc(100% - 40px);
+    max-width: 30em;
+}
+
+@media screen and (max-width: 640px) {
+    .visible-desktop {
+        display: none;
+    }
+    
+    .visible-mobile {
+        display: block;
+    }
+    
+    #en-tete {
+        position: fixed;
+        width: 75px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #D9D9D9;
+    }
+    
+    article {
+        margin-left: 75px;
+    }
+    
+    th, td {
+        font-size: .8em;
+    }
+    
+    nav label {
+       display: block;
+       text-indent: -1000px;
+       cursor: pointer;
+       width: 40px;
+       height: 40px;
+       margin: 20px auto 0;
+       background: url(../img/hamburger_icon_bleu.svg);
+    }
+    nav input ~ .menu {
+       display: none;
+    }
+    nav input:checked ~ .menu {
+       display: block;
+       background: #D9D9D9;
+       position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 75px;
+       margin: 0;
+    }
+}

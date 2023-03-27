@@ -1,0 +1,204 @@
+/* Police 'courgette' */
+@font-face {
+    font-family: 'courgette';
+    src: url(../fonts/courgette-regular-webfont.woff) format('woff'),
+            url(../fonts/courgette-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Police 'Noto Serif' */
+@font-face {
+    font-family: 'Noto Serif';
+    src: url(../fonts/notoserif-medium-webfont.woff) format('woff'),
+            url(../fonts/notoserif-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Police 'Noto Sans' */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../fonts/notosans-medium-webfont.woff) format('woff'),
+            url(../fonts/notosans-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+
+    background-image: url(../img/font-desk.png);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.logo {
+    display: inline-block;
+    width: 260px;
+    height: 190px;
+    margin-left: 550px;
+    margin-top: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a > figcaption {
+    color : white;
+}
+
+
+
+
+nav {
+    display: flex;
+    background-image: url(../img/Rectangle\ Menu.png);
+    background-repeat: no-repeat;
+    background-size: 1300px 105px;
+    background-position: left;
+    border-radius: 20px;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+#informations {
+    background-color: #0C5EED;
+    color: white;
+}
+
+#adresse {
+    margin-left: 150px;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'courgette';
+    display: flex;
+    width: 230px;
+    height: 80px;
+    background: #17FFC9;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+h3 {
+    font-size: 35px;
+    text-decoration: underline;
+    margin-left: 100px;
+}
+
+#left {
+    width: 400px;
+    height: 200px;
+    margin-top: -10px;
+}
+
+#right {
+    margin-left: 700px;
+    margin-top: -245px;
+    width: 400px;
+    height: 200px;
+}
+
+div {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+figcaption {
+    width: 500px;
+    margin-left: 150px;
+    margin-top: -70px;
+    font-size: 40px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+nav > h2 {
+    color : black;
+}
+
+nav > h2 > a {
+    color : black;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    nav {
+        flex-direction: column;
+        background-image: none;
+        margin-top: -20px;
+        float: left;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: -25px;
+        width: 210px;
+        height: 160px;
+    }
+
+    body {
+        background-image: url(../img/font-android.png);
+        background-repeat: no-repeat;
+    }
+
+    h2 {
+        margin-left: -20px;
+        border-radius: 15px;
+        font-size: 20px;
+        width: 160px;
+        height: 50px;
+    }
+
+    #left {
+        width: 50px;
+        height: 50px;
+        margin-top: -170px;
+        margin-left: 140px;
+    }
+
+    #right {
+        width: 50px;
+        height: 50px;
+        margin-top: 190px;
+        margin-left: 140px;
+    }
+
+    figcaption {
+        font-size: 22px;
+        margin-left: 70px;
+        margin-top: -50px;
+        color: black;
+    }
+
+    div img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+
+}

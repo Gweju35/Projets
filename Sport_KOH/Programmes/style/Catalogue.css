@@ -1,0 +1,287 @@
+/* Police 'courgette' */
+@font-face {
+        font-family: 'courgette';
+        src: url(../fonts/courgette-regular-webfont.woff) format('woff'),
+                url(../fonts/courgette-regular-webfont.woff2) format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+/* Police 'Noto Serif' */
+@font-face {
+        font-family: 'Noto Serif';
+        src: url(../fonts/notoserif-medium-webfont.woff) format('woff'),
+                url(../fonts/notoserif-medium-webfont.woff2) format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+/* Police 'Noto Sans' */
+@font-face {
+        font-family: 'Noto Sans';
+        src: url(../fonts/notosans-medium-webfont.woff) format('woff'),
+                url(../fonts/notosans-medium-webfont.woff2) format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+/* Image de fond */
+body {
+        background-image: url(../img/font.jpg);
+        background-size: cover;
+        /* Image de Montagne */
+        background-repeat: no-repeat;
+        /* Pas de répétition */
+        zoom: 0.9;
+}
+
+/* Liens */
+a {
+        text-decoration: none;
+        /* Les liens n'ont pas de mise en forme */
+        color: black;
+        /* Couleur des liens en noir */
+}
+
+a > figcaption {
+        text-decoration : none;
+        color : white;
+}
+
+/* Bouton 'Séjours' */
+#sejour {
+        background-color: #0C5EED;
+        /* Le bouton apparaît bleu */
+        color: white;
+        /* L'écriture est en blanc */
+}
+
+/* Logo Sport KOH */
+.logo {
+        /* Redimension et positionnement du logo dans la page */
+        display: inline-block;
+        width: 260px;
+        height: 190px;
+        margin-left: 550px;
+        margin-top: 35px;
+}
+
+/* Menu */
+nav {
+        /* Positionnement du menu */
+        display: flex;
+        background-image: url(../img/Rectangle\ Menu.png);
+        /* Image de rectangle gris */
+        background-repeat: no-repeat;
+        /* Pas de répétition */
+        background-size: 1300px 105px;
+        /* Redimension de l'image de fond */
+        background-position: left;
+        /* Positionnement de l'image de fond */
+        border-radius: 20px;
+        /* Arrondissements des angles des boutons */
+        flex-direction: row;
+        margin-left: 45px;
+}
+
+
+/* Sous-titre / Boutons */
+h2 {
+        /* Redimension et positionnement des sous-titres */
+        color: black;
+        /* Sous-titre en noir*/
+        font-size: 32px;
+        /* Taille de police 32 */
+        font-family: 'courgette';
+        /* Police 'courgette' */
+        display: flex;
+        width: 230px;
+        height: 80px;
+        background: #17FFC9;
+        /* Couleur de fond */
+        border-radius: 15px;
+        /* Arrondissement des angles */
+        margin-left: 15px;
+        margin-right: 15px;
+        /* Alignement du texte au centre */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+}
+
+/* Contenu du main : Sous-titre & Paragraphes */
+main div {
+        color: white;
+        /* Couleur du texte en blanc */
+        width: 360px;
+        /* Positionnement */
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+/* Paragraphes */
+p {
+        /* Redimension des paragraphes */
+        display: flex;
+        margin-left: 45px;
+        width: 280px;
+        height: 250px;
+        font-size: 15px;
+        /* Police de taille 15 pixels */
+        font-family: 'Noto Serif', 'Noto Sans';
+        /* Police du texte */
+}
+
+/* Légende des images */
+figcaption {
+        font-size: 23px;
+        /* Police en taille 23 pixels */
+        width: 300px;
+        font-family: 'Noto Serif', 'Noto Sans';
+        /* Police du texte */
+}
+
+/* Images */
+div img {
+        /* Redimension et positionnement des Images */
+        margin-left: -10px;
+        width: 300px;
+        height: 150px;
+}
+
+/* Balise international & mer --> correspond aux séjours bord de mer & séjours à l'étranger */
+#international,
+#mer {
+        display: inline-block;
+        background-image: url(../img/Rectangle\ Bleu.png);
+        /* Rectangle bleu en fond */
+        background-repeat: no-repeat;
+        /* Pas de répétition de l'image de fond */
+        background-position: center;
+        /* Position centrée */
+        border-radius: 15px;
+        /* Arrondis des angles */
+}
+
+/* Balise montagne --> correspond aux séjours à la montagne */
+#montagne {
+        display: inline-block;
+        background-image: url(../img/Rectangle\ Vert.png);
+        /* Rectangle vert en fond */
+        background-repeat: no-repeat;
+        /* Pas de répétiton de l'image de fond */
+        background-position: center;
+        /* Position centrée */
+        border-radius: 15px;
+        /* Arrondis des angles */
+}
+
+
+/* Media Queries */
+/* Format pour téléphone */
+@media screen and (max-width: 640px) {
+
+        /* Menu */
+        nav {
+                flex-direction: column;
+                /* Les boutons s'affichent en colonne */
+                background-image: none;
+                /* L'image de fond disparaît */
+                margin-top: -20px;
+                /* Positionnement */
+                float: left;
+        }
+
+        /* Elements principaux */
+        main {
+                flex-direction: column;
+                /* Les éléments principaux sont en colonne */
+        }
+
+        /* Balises */
+        #international,
+        #mer,
+        #montagne {
+                background-image: none;
+                /* Pas d'image de fond */
+        }
+
+        /* Logo Sport KOH*/
+        .logo {
+                /* Redimension et positionnement du logo */
+                margin-top: 10px;
+                margin-left: -25px;
+                width: 210px;
+                height: 160px;
+        }
+
+        /* Corps de la page*/
+        body {
+                background-image: url(../img/font-small.png);
+                /* Image de fond redéfinie */
+                background-repeat: no-repeat;
+                /* Pas de répétition de l'image de fond */
+                background-size: none;
+        }
+
+        /* Sous-titre / Boutons */
+        h2 {
+                /* Redimension et positionnement des Sous-titre(Boutons) */
+                margin-left: -20px;
+                border-radius: 15px;
+                font-size: 20px;
+                /* Police de taille 20 pixels */
+                width: 160px;
+                height: 50px;
+        }
+
+        /* Légende des images*/
+        figcaption {
+                font-size: 15px;
+                /* Police de taille 15 pixels */
+                margin-left: 12px;
+                /*  Positionnement */
+        }
+
+        /* Images */
+        div img {
+                /* Redimension des images */
+                width: 180px;
+                height: 90px;
+        }
+
+        /* Paragraphes */
+        p {
+                /* Redimension et positionnement des paragraphes */
+                font-size: 9px;
+                /* Police de taille 9 pixels */
+                margin-left: 30px;
+                margin-top: -10px;
+                width: 220px;
+        }
+
+        /* Position des div */
+        main div {
+                /* Positionnement des div */
+                position: relative;
+                left: 150px;
+                top: -600px;
+        }
+
+        /* Balises */
+        #montagne,
+        #international {
+                /* Positionnement */
+                margin-top: -150px;
+        }
+
+}
